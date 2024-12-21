@@ -80,3 +80,80 @@ list1.remove("b")
 
 #remove from specific index
 list1.pop(2)
+
+#list comprehension
+fruits=["apple","orange","kiwi"]
+new_friuts=[]
+for y in fruits:
+    if "a" in y:
+        new_friuts.append(y)
+
+print(new_friuts)
+
+#................................above same as below 
+new_friuts=[y for y in fruits if "a" in y]
+
+#Sort List
+#alphanumerically, ascending, by default
+thislist=["a","c","de"]
+thislist.sort()
+thislist.sort(reverse=True)
+
+#Reverse Order
+thislist.reverse()
+
+#Copy of a list
+#list1=list2 is making changes in one list to other list
+copylist=thislist.copy()
+copylist=list(thislist)
+copylist=thislist[:] #slice operater
+
+
+#Join Two Lists
+listnew=["a","b","c"]
+listold=[1,2,3]
+
+joinlist=listnew + listold
+
+for x in listold:
+    listnew.append(x)
+
+listold.extend(listnew)
+
+# Method 	    Description
+# append()	    Adds an element at the end of the list
+# clear()	    Removes all the elements from the list
+# copy()	    Returns a copy of the list
+# count()	    Returns the number of elements with the specified value
+# extend()	    Add the elements of a list (or any iterable), to the end of the current list
+# index()	    Returns the index of the first element with the specified value
+# insert()	    Adds an element at the specified position
+# pop()	        Removes the element at the specified position
+# remove()	    Removes the item with the specified value
+# reverse()	    Reverses the order of the list
+# sort()	    Sorts the list
+
+
+
+#TUPLE
+
+#Ordered , unchangeable , indexed , allow duplicates
+
+mytuple=("a", "e", 1 , True)
+
+#access
+print(mytuple[1])
+
+#Tupples can not add, remove and change. but,
+#To update a tupple once it has created,
+#convert the tuple into a list, change the list, and convert the list back into a tuple.
+
+tuplelist=list(mytuple)
+#any list method operation
+mytuple=tuple(tuplelist)
+
+#creating a tuple with only one item, include a comma after the item
+oneitemtuple=("kiwi",)
+
+#delete completely
+del mytuple
