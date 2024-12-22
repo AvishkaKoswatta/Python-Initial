@@ -157,3 +157,57 @@ oneitemtuple=("kiwi",)
 
 #delete completely
 del mytuple
+
+#Join Two Tuples
+tuple1=(1,2,3)
+tuple2=(4,5)
+tuple3=tuple1+tuple2
+
+
+
+#SETS
+#unordered, unchangeable* but can add or remove, unindexed , no duplicates allow
+myset={"a","b",1}
+
+#Access set items
+#if "a" present in the set, use in keyword
+print("a" in myset)
+
+#Add Set Items
+myset.add("c")
+
+#add items from another set
+thisset=("g","h")
+myset.update(thisset) #second items do not have to be a set
+
+#Remove Set Items
+myset.remove("a")
+myset.discard("b")
+myset.pop() #remove random item
+
+#delete entire set
+del myset
+
+#Join Sets
+
+set1=("a","b","c",1)
+set2=(1,2,3,4)
+
+#union() and update() - joins all items from both sets
+set3 = set1.union(set2)
+set3 = set1 | set2
+set3 = set1.update(set2)
+set3 = set1.union(set2, myset, thisset)
+set3 = set1 | set2 | myset | thisset
+
+#intersection() - keeps ONLY the duplicates
+set4 = set1.intersection(set2)
+set4 = set1 & set2
+
+#difference() - return a new set, only the items from the first set that are not present in the other set
+set5 = set1.difference(set2)
+set5 = set1 - set2
+
+#symmetric_difference() - keep only the elements that are NOT present in both sets
+set6 = set1.symmetric_difference(set2)
+set6 = set1 ^ set2
