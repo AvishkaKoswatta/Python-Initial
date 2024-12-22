@@ -211,3 +211,45 @@ set5 = set1 - set2
 #symmetric_difference() - keep only the elements that are NOT present in both sets
 set6 = set1.symmetric_difference(set2)
 set6 = set1 ^ set2
+
+#Dictionaries
+#key:value pairs
+#ordered, changeable, and do not allow duplicates
+mydisct={
+    "name":"abc",
+    "age":25
+}
+
+#get the value of a key
+x=mydisct["age"]
+
+#all keys list
+x=mydisct.keys()
+
+#all values list
+x=mydisct.values()
+
+#all key:value pairs
+x=mydisct.items()
+
+#Change Values
+mydisct["name"]="nm"
+mydisct.update({"name":"jkl"})
+
+#Adding Items
+mydisct["height"]=150
+
+#Removing Items
+mydisct.pop("name")
+del mydisct["name"]
+mydisct.popitem() #removes the last inserted item
+mydisct.clear() #empty the dict
+
+
+
+
+
+
+
+
+#Conditions and If 
