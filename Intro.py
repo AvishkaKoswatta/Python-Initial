@@ -253,3 +253,35 @@ mydisct.clear() #empty the dict
 
 
 #Conditions and If 
+
+a=100
+b=20
+c=10
+if a>b:
+    print("True")
+elif a<b:
+    print("False")
+else:
+    print("Equal")
+
+
+print ("T") if a>b else print("F")
+
+#AND
+if a>b and b>c:
+    print("Both correct")
+
+#Or
+if a<b or c>b:
+    print("At least one correct")
+
+#Not
+if not a<b:
+    print("a is not less than b")
+
+#while Loop
+i=2
+while i< 8:
+    print(i)
+    i=i+1
+
