@@ -67,7 +67,7 @@ while number<10:
    print(number) 
 
 
-
+#loop for check age and display ticket price
 print("Movie Ticket")
 while True:
    age=int(input("Enter your age: "))
@@ -79,3 +79,8 @@ while True:
       print("$15")
       
    break
+
+
+#for loop is effective for looping through a list
+#shouldn’t modify a list inside a for loop 
+#To modify a list use while loop
