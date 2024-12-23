@@ -21,3 +21,11 @@ def full_name(first,last):
    return dict
 
 print('Anne', 'Marry')
+
+#lists
+def greet_list():
+   for name in names:
+    print(f"Hello, {name}")
+
+names=["Anne", "Marry", "John"]
+greet_list()
