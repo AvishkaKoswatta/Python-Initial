@@ -84,3 +84,14 @@ while True:
 #for loop is effective for looping through a list
 #shouldn’t modify a list inside a for loop 
 #To modify a list use while loop
+
+order=["apple","banana","orange"]
+delivered=[]
+while order:
+   i=order.pop()
+   delivered.append(i)
+
+for j in delivered:
+   print(j.title())
+
+print(delivered)
