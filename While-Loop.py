@@ -68,3 +68,14 @@ while number<10:
 
 
 
+print("Movie Ticket")
+while True:
+   age=int(input("Enter your age: "))
+   if age<3:
+      print("Free")
+   elif 3<age<=12:
+      print("$10")
+   else:
+      print("$15")
+      
+   break
