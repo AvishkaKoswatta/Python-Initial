@@ -46,3 +46,20 @@ def show_items(complete):
 
 get_items(uncomplete,complete)
 show_items(complete)
+
+
+#Arbitary args
+#tupple
+
+def topings(*args):
+   print(args)
+   for item in args:
+      print(f"{item}")
+
+topings("Cheese")
+topings("Cheese","Mushroom","Pinaple")   
+
+#Keyword Arguments
+
+
+#Arbitrary Keyword Arguments, **kwargs
