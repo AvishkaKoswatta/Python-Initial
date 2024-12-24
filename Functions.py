@@ -29,3 +29,20 @@ def greet_list():
 
 names=["Anne", "Marry", "John"]
 greet_list()
+
+
+#move items in one list to another list
+uncomplete=["a","b","c","d"]
+complete=[]
+
+def get_items(uncomplete,complete):
+   while uncomplete:
+      list1=uncomplete.pop()
+      complete.append(list1)
+
+def show_items(complete):
+   for item in complete:
+      print(item)
+
+get_items(uncomplete,complete)
+show_items(complete)
