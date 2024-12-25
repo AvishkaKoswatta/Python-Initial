@@ -1,8 +1,5 @@
-def topings(*args):
-   print(args)
-   for item in args:
-      print(f"{item}")
+fact=1
+for i in range(1,4):
+    fact=fact*i
 
-topings("Cheese")
-topings("Cheese","Mushroom","Pinaple")   
-
+print(fact)

@@ -43,3 +43,28 @@ class MyClass:
   def __init__(self, name, age):
     self.name = name
     self.age = age
+
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+
+MyName = MyClass("John", 36) #This is the object of the class MyClass
+print(MyName.name)
+MyName.myfunc()
+
+
+
+#Restaurant class
+class Restaurant:
+    def __init__ (self, name, cuisine):
+        self.name=name
+        self.cuisine=cuisine
+   
+    def description (self):
+      print("The name of the restaurant is " + self.name + " and it serves " + self.cuisine + " cuisine.")
+    
+    def open(self):
+      print("The restaurant is open.")
+
+restaurant1 = Restaurant("The Golden Dragon", "Chinese")
+restaurant1.description()
+restaurant1.open()
