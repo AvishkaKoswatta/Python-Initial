@@ -82,3 +82,34 @@ print("num1= ",num1)
 print("num2= ",num2)
 
 
+
+
+#reverse a number
+num1=int(input("Enter a number: "))
+x=0
+
+while num1>0:
+    digit=num1%10
+    x=x*10+digit
+    num1=num1//10
+
+print("Reversed Number is: ",x)
+
+
+
+
+
+#Add the numbers in a user input integer.
+def total():
+    temp=0
+    number=int((input("Enter a number: ")))
+    while number>0:
+        digit=number%10
+        temp=temp+digit
+        number=number//10
+    print("Total is: ",temp)
+
+total()
+
+
+
