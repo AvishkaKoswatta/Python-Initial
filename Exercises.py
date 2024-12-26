@@ -62,3 +62,23 @@ while i<numbers:
     i+=1
 
 print(num_list)
+
+
+
+#swapp 2 numbers
+num=0
+num1=int(input("Enter a number: "))
+num2=int(input("Enter a number: "))
+
+print("num1= ",num1)
+print("num2= ",num2)
+
+num=num1
+num1=num2
+num2=num
+
+print("After swapping")
+print("num1= ",num1)
+print("num2= ",num2)
+
+
