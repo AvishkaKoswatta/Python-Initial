@@ -113,3 +113,72 @@ total()
 
 
 
+#Reverse a string
+def reverse_string():
+    string1 = input("Enter a string: ")   
+    reversed_string = ""  
+    
+    for i in range(len(string1) - 1, -1, -1): #start from the last character. go upto the first character. step -1
+        reversed_string += string1[i]
+    
+    print("Reversed String:", reversed_string)
+
+reverse_string()
+
+
+
+
+#Count the number of digits and non-digit characters in a string.
+def counting():
+    count_digits = 0
+    count_others = 0
+
+    str1 = input("Enter the string: ")
+
+    for char in str1:
+        if '0' <= char <= '9':  
+            count_digits += 1
+        else:
+            count_others += 1 
+
+    print("Number of digits:", count_digits)
+    print("Number of non-digit characters:", count_others)
+
+counting()
+
+
+
+
+#Count the number of vowels in a string.
+def count_vowels():
+    count=0
+    str1=str((input("Enter a string: ")))
+    lowercase=str1.lower()
+    for char in lowercase:
+        if char=='a' or char=='e' or char=='i' or char=='o' or char=='u':
+            count+=1
+    print("Number of vowels: ",count)
+
+count_vowels()
+
+
+
+#Check if a number is binary or not.
+def isBinary():
+    flag=0
+    num=int((input("Enter a number: ")))
+    while num>0:
+        digit=num%10
+        if digit==0 or digit==1:
+            flag=1
+        else:
+            flag=0
+            break
+        num=num//10
+    if flag==1:
+        print("The number is binary")
+    else:
+        print("The number is not binary")
+
+
+isBinary()

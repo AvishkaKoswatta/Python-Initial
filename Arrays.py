@@ -8,3 +8,10 @@
 #When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
 #If you add new items to a list, the new items will be placed at the end of the list.
 
+num = int(input("Enter a number: "))
+reversed_num = 0
+while num > 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num //= 10
+print("Reversed Number:", reversed_num)
