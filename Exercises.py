@@ -182,3 +182,73 @@ def isBinary():
 
 
 isBinary()
+
+
+
+#Sum of series 1+1/2+1/3+1/4+1/5+...+1/n
+def sum_seies():
+    n=int(input("Enter the number of terms: "))
+    sum=float(0)
+    i=1
+    while i<=n:
+        sum+=1.0/i #floating point division
+        i+=1
+    print("Sum of series is: ",sum)
+
+sum_seies()
+
+
+
+# Minimum and maximum values in a list
+def list_min_max():
+    mylist=[1,2,3,4,5,6,7,8,9,10]
+    print("Minimum value: ",min(mylist))
+    print("Maximum value: ",max(mylist))
+    print("Sum of the list: ",sum(mylist))
+
+list_min_max()
+
+
+
+# Convert binary to decimal
+def binary_to_decimal():
+    binary=int(input("Enter a binary number: "))
+    i=0
+    decimal=0
+
+    while binary>0:
+        digit=binary%10
+        decimal=decimal+(digit*pow(2,i))
+        binary=binary//10
+        i+=1
+
+    print("Decimal Number is: ",decimal)
+
+binary_to_decimal()
+
+
+
+
+# Convert decimal to binary
+def decimal_to_binary():
+    decimal=int(input("Enter a decimal number: "))
+    binary=""
+    i=0
+    reversed_string = "" 
+    while decimal>0:
+        remainder=decimal%2
+        decimal=decimal//2
+        binary+=str(remainder)
+    
+    for i in range(len(binary) - 1, -1, -1): 
+        reversed_string += binary[i]
+    
+    print("Reversed String:", reversed_string)
+
+decimal_to_binary()
+
+
+
+
+
+
