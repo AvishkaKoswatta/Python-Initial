@@ -1,6 +1,8 @@
 #Object-oriented programming in Python
+
 #Python is a multi-paradigm programming language. It supports different programming approaches.
-#One of the popular approaches to solve a programming problem is by creating objects. This is known as Object-Oriented Programming (OOP).
+#One of the popular approaches to solve a programming problem is by creating objects. 
+#This is known as Object-Oriented Programming (OOP).
 #An object has two characteristics:
 #attributes
 #behavior
@@ -8,7 +10,8 @@
 #Parrot is an object,
 #name, age, color are attributes
 #singing, dancing are behavior
-#The concept of OOP in Python focuses on creating reusable code. This concept is also known as DRY (Don't Repeat Yourself).
+#The concept of OOP in Python focuses on creating reusable code. 
+#This concept is also known as DRY (Don't Repeat Yourself).
 #In Python, the class is defined by using the class keyword.
 #A class is a blueprint for the object.
 #We can think of class as an sketch of a parrot with labels. 
@@ -39,32 +42,46 @@
 #To understand the meaning of classes we have to understand the built-in __init__() function.
 #All classes have a function called __init__(), which is always executed when the class is being initiated.
 
-class MyClass:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+# class MyClass:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
 
-  def myfunc(self):
-    print("Hello my name is " + self.name)
+#   def myfunc(self):
+#     print("Hello my name is " + self.name)
 
-MyName = MyClass("John", 36) #This is the object of the class MyClass
-print(MyName.name)
-MyName.myfunc()
+# MyName = MyClass("John", 36) #This is the object of the class MyClass
+# print(MyName.name)
+# MyName.myfunc()
 
 
 
 #Restaurant class
-class Restaurant:
-    def __init__ (self, name, cuisine):
-        self.name=name
-        self.cuisine=cuisine
+# class Restaurant:
+#     def __init__ (self, name, cuisine):
+#         self.name=name
+#         self.cuisine=cuisine
    
-    def description (self):
-      print("The name of the restaurant is " + self.name + " and it serves " + self.cuisine + " cuisine.")
+#     def description (self):
+#       print("The name of the restaurant is " + self.name + " and it serves " + self.cuisine + " cuisine.")
     
-    def open(self):
-      print("The restaurant is open.")
+#     def open(self):
+#       print("The restaurant is open.")
 
-restaurant1 = Restaurant("The Golden Dragon", "Chinese")
-restaurant1.description()
-restaurant1.open()
+# restaurant1 = Restaurant("The Golden Dragon", "Chinese")
+# restaurant1.description()
+# restaurant1.open()
+
+
+
+
+class Bank:
+   def __init__(self, name, location):
+      self.name=name
+      self.location=location
+
+   def description(self):
+      print("The bank name is "+self.name + " and it is located at " + self.location)
+
+bank1=Bank("Ceylon", "Colombo")
+bank1.description()
