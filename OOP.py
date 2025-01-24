@@ -58,3 +58,7 @@ animals = [Dog(), Cat(), Animal()]
 
 for animal in animals:
     print(animal.make_sound())
+
+
+
+# Inheritance
