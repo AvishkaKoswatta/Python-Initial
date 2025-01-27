@@ -40,24 +40,42 @@
 # Polymorphism
 # having many forms.
 
+# class Animal:
+#     def make_sound(self):
+#         return "Some generic animal sound"
 
-class Animal:
-    def make_sound(self):
-        return "Some generic animal sound"
+# class Dog(Animal):
+#     def make_sound(self):
+#         return "Bark"
 
-class Dog(Animal):
-    def make_sound(self):
-        return "Bark"
+# class Cat(Animal):
+#     def make_sound(self):
+#         return "Meow"
 
-class Cat(Animal):
-    def make_sound(self):
-        return "Meow"
+# animals = [Dog(), Cat(), Animal()]
 
-# Polymorphism in action
-animals = [Dog(), Cat(), Animal()]
+# for animal in animals:
+#     print(animal.make_sound())
 
-for animal in animals:
-    print(animal.make_sound())
+class Plane:
+    def __init__(self,name):
+        self.name=name
+    
+    def move(self):
+        print("Fly " + self.name)
+
+class Boat:
+    def __init__(self,name):
+        self.name=name
+
+    def move(self):
+        print("Sail " + self.name)
+
+plane=Plane("Boeing")
+plane.move()
+
+boat=Boat("Cruise")
+boat.move()
 
 
 
