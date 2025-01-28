@@ -79,19 +79,52 @@
 
 
 
+
+
+
+
+
+
 # Inheritance
-class Person: #Parent class
-    def __init__(self, fname, lname):
-        self.fname=fname
-        self.lname=lname
+# class Person: #Parent class
+#     def __init__(self, fname, lname):
+#         self.fname=fname
+#         self.lname=lname
 
-    def printName(self):
-        print(self.fname+ " " + self.lname)
+#     def printName(self):
+#         print(self.fname+ " " + self.lname)
 
-class Student(Person): #Child class
-    pass
+# class Student(Person): #Child class
+#     pass
 
-student1=Student("John", "Doe")
-student1.printName()
+# student1=Student("John", "Doe")
+# student1.printName()
+
+
+
+
+
+
+
+
+
+
+
 
 # Data Abstraction
+# Hiding the complex implementation details and exposing only the necessary features of an object
+
+from abc import ABC, abstractmethod
+# Abstract class (like a blueprint)
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        pass
+
+# Concrete class (implements the blueprint)
+class Cat(Animal):
+    def sound(self):
+        print("Meow")
+
+cat=Cat()
+cat.sound()
