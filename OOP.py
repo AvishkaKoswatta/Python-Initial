@@ -57,30 +57,41 @@
 # for animal in animals:
 #     print(animal.make_sound())
 
-class Plane:
-    def __init__(self,name):
-        self.name=name
+# class Plane:
+#     def __init__(self,name):
+#         self.name=name
     
-    def move(self):
-        print("Fly " + self.name)
+#     def move(self):
+#         print("Fly " + self.name)
 
-class Boat:
-    def __init__(self,name):
-        self.name=name
+# class Boat:
+#     def __init__(self,name):
+#         self.name=name
 
-    def move(self):
-        print("Sail " + self.name)
+#     def move(self):
+#         print("Sail " + self.name)
 
-plane=Plane("Boeing")
-plane.move()
+# plane=Plane("Boeing")
+# plane.move()
 
-boat=Boat("Cruise")
-boat.move()
+# boat=Boat("Cruise")
+# boat.move()
 
 
 
 # Inheritance
+class Person: #Parent class
+    def __init__(self, fname, lname):
+        self.fname=fname
+        self.lname=lname
 
+    def printName(self):
+        print(self.fname+ " " + self.lname)
 
+class Student(Person): #Child class
+    pass
+
+student1=Student("John", "Doe")
+student1.printName()
 
 # Data Abstraction
