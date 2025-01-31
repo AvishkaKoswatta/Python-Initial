@@ -270,3 +270,22 @@ def is_leap(year):
 
 year = int(input())
 print(is_leap(year))
+
+
+
+
+
+
+def merge_the_tools():
+    string, k = input(), int(input())
+    for i in range (0,len(string),k):
+        t=set(string[i:k])
+        result="".join(sorted(t))
+        print(result)
+        k=k+k
+
+merge_the_tools()
+# aasdfg
+# 3
+# as
+# dfg
