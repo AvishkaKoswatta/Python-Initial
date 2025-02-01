@@ -289,3 +289,13 @@ merge_the_tools()
 # 3
 # as
 # dfg
+
+
+
+# complex number and r, phase
+import cmath
+complex_number=complex(input())
+phase=cmath.phase(complex_number)
+r=abs(complex_number)
+print(r)
+print(phase)
