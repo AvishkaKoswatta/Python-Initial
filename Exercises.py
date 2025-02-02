@@ -299,3 +299,12 @@ phase=cmath.phase(complex_number)
 r=abs(complex_number)
 print(r)
 print(phase)
+
+
+
+def mutate_string(string, position, character):
+    l=list(string)
+    l[position]=character
+    string=''.join(l)
+    
+    return string
