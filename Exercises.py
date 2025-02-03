@@ -308,3 +308,12 @@ def mutate_string(string, position, character):
     string=''.join(l)
     
     return string
+
+
+
+# power
+a=int(input())
+b=int(input())
+m=int(input())
+print(pow(a,b))
+print(pow(a,b,m))
