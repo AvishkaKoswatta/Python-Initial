@@ -23,3 +23,16 @@
 
 
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import product
+# int list A
+# int list B
+# print the cartesian product of A and B
+
+
+# A=list(input())
+# B=list(input())
+
+# print(list(product(A, B)))
+
+#print(*product(A, B))
