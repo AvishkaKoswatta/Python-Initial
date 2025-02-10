@@ -36,3 +36,18 @@ from itertools import product
 # print(list(product(A, B)))
 
 #print(*product(A, B))
+
+
+
+
+
+# print fibonacci in python
+def fibonacci(n):
+    a,b=0,1
+    f=[]
+    for i in range(n):
+        f.append(a)
+        a,b=b,a+b
+    print(f)
+
+fibonacci(10)
