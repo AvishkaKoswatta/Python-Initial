@@ -24,7 +24,7 @@
 
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-from itertools import product
+#from itertools import product
 # int list A
 # int list B
 # print the cartesian product of A and B
@@ -41,13 +41,31 @@ from itertools import product
 
 
 
-# print fibonacci in python
-def fibonacci(n):
-    a,b=0,1
-    f=[]
-    for i in range(n):
-        f.append(a)
-        a,b=b,a+b
-    print(f)
+email="username@websitename.extension"
+username=email.split("@")[0]
+website=email.split("@")[1].split(".")[0]
+extension=email.split(".")[1]
+# print("Username: ",username)
+# print("Website: ",website)
+# print("Extension: ",extension)
+def fun (s):
+    for char in username:
+        if char.isalnum() or char=="-" or char=="_":
+            continue
+        else:
+            return False
+    for char in website:
+        if char.isalnum():
+            continue
+        else:
+            return False
+    for char in extension:
+        if char.isalpha():
+            continue
+        else:
+            return False
 
-fibonacci(10)
+    return True
+
+print(fun(email))
+
