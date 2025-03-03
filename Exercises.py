@@ -371,3 +371,82 @@ if __name__ == '__main__':
         fracs.append(Fraction(*map(int, input().split())))
     result = product(fracs)
     print(*result)
+
+
+
+
+
+
+email="username@websitename.extension"
+username=email.split("@")[0]
+website=email.split("@")[1].split(".")[0]
+extension=email.split(".")[1]
+# print("Username: ",username)
+# print("Website: ",website)
+# print("Extension: ",extension)
+def fun (s):
+    for char in username:
+        if char.isalnum() or char=="-" or char=="_":
+            continue
+        else:
+            return False
+    for char in website:
+        if char.isalnum():
+            continue
+        else:
+            return False
+    for char in extension:
+        if char.isalpha():
+            continue
+        else:
+            return False
+
+    return True
+
+print(fun(email))
+
+
+
+
+
+#print pattern
+i = 1
+while i <= 5:
+    j = 1  # Reset j for each new line
+    while j <= i:
+        print(j, end=" ")
+        j += 1
+    print()  # Move to the next line
+    i += 1
+
+#print same pattern
+for i in range (1,6,1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+#reverse pattern
+for i in range(5, 1, -1):
+    for j in range(i, 0,-1):
+        print(j, end=' ')
+    print()
+
+
+# sum of n numbers
+input_number=int(input())
+sum=0
+for i in range (1, input_number+1,1):
+    sum+=i
+print(sum)
+
+
+
+
+
+#multiplication table
+n=int(input())
+for i in range (1, 11,1):
+    print(i*n)
+
+
+

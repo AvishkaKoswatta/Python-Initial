@@ -41,31 +41,6 @@
 
 
 
-email="username@websitename.extension"
-username=email.split("@")[0]
-website=email.split("@")[1].split(".")[0]
-extension=email.split(".")[1]
-# print("Username: ",username)
-# print("Website: ",website)
-# print("Extension: ",extension)
-def fun (s):
-    for char in username:
-        if char.isalnum() or char=="-" or char=="_":
-            continue
-        else:
-            return False
-    for char in website:
-        if char.isalnum():
-            continue
-        else:
-            return False
-    for char in extension:
-        if char.isalpha():
-            continue
-        else:
-            return False
 
-    return True
 
-print(fun(email))
 
