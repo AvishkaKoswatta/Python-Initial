@@ -163,6 +163,8 @@ count_vowels()
 
 
 
+
+
 #Check if a number is binary or not.
 def isBinary():
     flag=0
